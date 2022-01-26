@@ -8,7 +8,7 @@
   <link href="css/style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-  <div class = "all">
+  <main>
     <div class = "cards_types">
       <div data-id="visa" class="card"></div>
       <div data-id="mastercard" class="card"></div>
@@ -16,11 +16,11 @@
       <div data-id="american" class="card"></div>
     </div>
     <div data-widget="filter-widget">
-      <form>
+      <form onsubmit="return false">
         <label><input required type="text" data-id="number" class="number" maxlength="25" placeholder="Введите номер карты"></label>
         <button data-id="submit" class="validate_btn">Click to validate</button>
     </form>
   </div>  
-  </div>
+</main>
 </body>
 </html>

@@ -1,3 +1,7 @@
+main {
+  margin: 30px;
+}
+
 .cards_types {
   display: flex;
   width: 100%;

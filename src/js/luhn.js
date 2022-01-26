@@ -9,7 +9,6 @@ export default function validLuhn() {
     removeError();
     return Error('Слишком короткий номер!');
   }
-
   luhnPorc(value);
   return 'Номер подходящей длины';
 }

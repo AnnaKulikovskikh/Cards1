@@ -5,8 +5,9 @@ import removeError from './removeError';
 
 const validateBtn = document.querySelector('.validate_btn');
 
-validateBtn.addEventListener('click', validLuhn);
+validateBtn.addEventListener('click', removeError);
 validateBtn.addEventListener('click', defineSystem);
+validateBtn.addEventListener('click', validLuhn);
 
 document.querySelector('.number').addEventListener('focus', () => {
   removeError();

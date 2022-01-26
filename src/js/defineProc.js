@@ -26,7 +26,7 @@ export default function defineProc(first) {
       answer = 'mastercard';
       break;
     default:
-      removeError();
+      // removeError();
       Error('Платежная система не определена!');
       answer = 'no define';
   }

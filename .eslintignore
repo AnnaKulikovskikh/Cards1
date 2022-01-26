@@ -1,4 +1,6 @@
 dist
+define.test.js
+luhn.test.js
 coverage
 doc
 webpack.*.js
