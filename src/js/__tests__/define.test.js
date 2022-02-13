@@ -3,7 +3,7 @@ import defineProc from '../defineProc';
 test('Не определен', () => {
   const first = '';
   const result = defineProc(first);
-  expect(result).toBe('no define');
+  expect(result).toBe('no number');
 });
 
 test('mastercard', () => {
@@ -13,7 +13,7 @@ test('mastercard', () => {
 
 test('visa', () => {
   const result = defineProc('4');
-  expect(result).toBe('mastercard');
+  expect(result).toBe('visa');
 });
 test('american-express', () => {
   const result = defineProc('3');

@@ -5,7 +5,7 @@ import removeError from './removeError';
 
 const validateBtn = document.querySelector('.validate_btn');
 
-validateBtn.addEventListener('click', removeError);
+// validateBtn.addEventListener('click', removeError);
 validateBtn.addEventListener('click', defineSystem);
 validateBtn.addEventListener('click', validLuhn);
 

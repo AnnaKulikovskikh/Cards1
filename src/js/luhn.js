@@ -5,10 +5,20 @@ import luhnPorc from './luhnProc';
 export default function validLuhn() {
   const number = document.querySelector('.number');
   const value = number.value.replace(/\D/g, '');
-  if (value.length < 9) {
+
+  const luhnCheck = luhnPorc(value);
+
+  if (luhnCheck === 'short') {
     removeError();
-    return Error('Слишком короткий номер!');
+    Error('Слишком короткий номер!');
+  } else if (luhnCheck === 'long') {
+    removeError();
+    Error('Слишком длинный номер!');
+  } else if (!luhnCheck) {
+    removeError();
+    Error('Номер не валиден');
   }
-  luhnPorc(value);
-  return 'Номер подходящей длины';
+  if (!document.querySelector('.form-error')) {
+    alert('Принято!');
+  }
 }
