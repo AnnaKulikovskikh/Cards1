@@ -1,10 +1,10 @@
 export default function error(txt) {
-  const number = document.querySelector('.number');
+  const label = document.querySelector('label');
   const errorF = document.createElement('div');
   errorF.className = 'form-error';
   errorF.dataset.id = 'error';
   errorF.textContent = txt;
-  number.append(errorF);
-  errorF.style.top = `${number.offsetTop + number.offsetHeight}px`;
-  errorF.style.left = `${(number.offsetLeft + number.offsetWidth - errorF.offsetWidth) / 2}px`;
+  label.append(errorF);
+  errorF.style.top = `${label.offsetTop + label.offsetHeight + 15}px`;
+  errorF.style.left = `${label.offsetLeft + (label.offsetWidth - errorF.offsetWidth) / 2}px`;
 }
